@@ -9,26 +9,44 @@
     />
     <title>Tailwind CSS</title>
   </head>
-  <body class="h-screen bg-green-100 flex justify-center items-center">
+  <body class="h-screen bg-gray-500 flex justify-center items-center">
     <div
-      class="bg-white border border-4 border-blue-800 h-64 w-64 flex flex-col justify-center items-center"
+      class="bg-white w-72 h-72 border border-4 rounded-md flex flex-col justify-center items-center"
     >
-      <form action="saveForm" class="flex flex-col justify-center items-center">
-        <label for="fullName" class="text-blue-900 font-bold mb-4">
-          Full name
-        </label>
-        <input
-          type="text"
-          id="fullName"
-          placeholder="Enter full name"
-          class="bg-gray-100 text-blue-300 border border-2 rounded-md shadow-lg mb-4 placeholder-blue-300 text-center p-2"
-        />
-        <button
-          class="cursor-pointer block bg-blue-800 text-white py-2 px-5 border rounded-md"
-        >
-          Save
-        </button>
-      </form>
+      <div class="bg-gray-200 w-full p-4">
+        <h1 class="text-gray-600">The title of card here</h1>
+      </div>
+      <div
+        class="flex bg-white p-5 w-full flex justify-between items-center flex-row uppercase"
+      >
+        <div class="bg-orange-600 border border-0 rounded-md p-2 text-white">
+          under review
+        </div>
+        <div class="font-bold">May 14, 1988</div>
+      </div>
+      <div class="bg-white py-2 px-8 border-t-2 border-gray-100 shadow-2xl">
+        <div class="bg-gray-200 border rounded-md py-4 px-8">
+          <p>Here is a short comment about this employee.</p>
+        </div>
+      </div>
+      <div class="bg-gray-200 w-full p-4 flex flex-col">
+        <div class="uppercase mb-4"><h3>employee</h3></div>
+        <div class="flex flex-row align-center">
+          <div
+            class="flex justify-center content-center bg-blue-600 p-4 w-16 h-16 border rounded-full uppercase"
+          >
+            <p class="text-white">vg</p>
+          </div>
+          <div class="name-title pl-4 flex flex-col justify-center">
+            <div class="font-bold">
+              <p>Victor Gonzalez</p>
+            </div>
+            <div class="text-gray-800">
+              <p>Instructor</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
